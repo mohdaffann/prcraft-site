@@ -49,21 +49,21 @@ function Installation() {
                                 <span className="text-orange-500 ">-</span>
                                 Windows (Powershell)
                             </h3>
-                            <InstallCommand command={'$env:GROQ_API_KEY=your-groq-api-key'} />
+                            <InstallCommand command={'setx GROQ_API_KEY "your-key-here"'} />
                         </div>
                         <div>
                             <h3 className="text-lg font-medium text-white mb-3 flex items-center gap-2">
                                 <span className="text-orange-500 ">-</span>
                                 Windows (CMD)
                             </h3>
-                            <InstallCommand command={'set GROQ_API_KEY=your-groq-api-key'} />
+                            <InstallCommand command={'setx GROQ_API_KEY "your-key-here"'} />
                         </div>
                         <div>
                             <h3 className="text-lg font-medium text-white mb-3 flex items-center gap-2">
                                 <span className="text-orange-500 ">-</span>
                                 macOS / Linux
                             </h3>
-                            <InstallCommand command={'export GROQ_API_KEY=your-groq-api-key'} />
+                            <InstallCommand command={'echo export GROQ_API_KEY = your-key-here >> ~/.zshrc\nsource ~/.zshrc'} />
                         </div>
                     </div>
                 </section>
