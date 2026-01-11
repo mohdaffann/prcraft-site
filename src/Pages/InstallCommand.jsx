@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Copy, Check } from 'lucide-react';
 
-function InstallCommand({ command }) {
+function InstallCommand({ command, widthExtend }) {
     const [copied, setCopied] = useState(false);
 
     const copyToClip = () => {
@@ -11,7 +11,7 @@ function InstallCommand({ command }) {
     };
 
     return (
-        <div className="bg-[#0d1117] border border-gray-800 rounded-lg p-4 flex items-center justify-between max-w-md">
+        <div className={`bg-[#0d1117] border border-gray-800 rounded-lg p-4 flex items-center justify-between ${widthExtend === true ? 'max-w-lg' : 'max-w-md'}`}>
             <code className="text-gray-300 font-mono text-sm">
                 {command}
             </code>

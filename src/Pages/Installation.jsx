@@ -63,7 +63,7 @@ function Installation() {
                                 <span className="text-orange-500 ">-</span>
                                 macOS / Linux
                             </h3>
-                            <InstallCommand command={'echo export GROQ_API_KEY = your-key-here >> ~/.zshrc\nsource ~/.zshrc'} />
+                            <InstallCommand widthExtend={true} command={'echo export GROQ_API_KEY = your-key-here >> ~/.zshrc\nsource ~/.zshrc'} />
                         </div>
                     </div>
                 </section>
