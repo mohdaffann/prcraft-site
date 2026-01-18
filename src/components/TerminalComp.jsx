@@ -41,13 +41,14 @@ function TerminalComp() {
     }, [])
 
     return (
-        <div className="w-full max-w-xl min-h-60 rounded-xl bg-[#1D1F21]  text-white border border-orange-400/70
+        <div className="w-full max-w-xl min-h-60 rounded-xl bg-[#202121]  text-white border border-orange-400/70
         ">
             {/* header */}
             <div className="flex items-center gap-2 px-4 py-2 border-b border-white">
                 <span className="h-3 w-3 rounded-full bg-red-500" />
                 <span className="h-3 w-3 rounded-full bg-yellow-400" />
                 <span className="h-3 w-3 rounded-full bg-green-500" />
+                <span className="text-gray-400 ml-4">~/dev</span>
             </div>
 
             {/* body */}
